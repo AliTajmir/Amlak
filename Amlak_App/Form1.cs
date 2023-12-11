@@ -140,7 +140,7 @@ namespace Amlak_App
                     Forosh_Ejare_Kharid = null;
                     break;
             }
-            //disable_input(Forosh_Ejare_Kharid, NoUser, NoMelk);
+            
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
@@ -240,17 +240,11 @@ namespace Amlak_App
                 txt_Metraj.Text = object_melk.Metraj.ToString();
                 txt_PhoneNumber.Text = object_melk.Telephone;
                 txt_Rahn.Text = object_melk.Rahn;
-                txt_Tabaghe.Text = object_melk.Tabaghe;
+                txt_Tabaghe.Text = object_melk.Tabaghe.ToString();
                 txt_TedadKhab.Text = object_melk.TedadKhab.ToString();
                 txt_TedadVahed.Text = object_melk.TedadVahed.ToString();
                 txt_Tozihat.Text = object_melk.Tozihat;
                 txt_YearSakht.Text = object_melk.SaleSakht;
-                //check_Anbari.Checked = object_melk.Anbari.Value;
-                //check_Asansor.Checked = object_melk.Asansor.Value;
-                //check_Kabinet.Checked = object_melk.Kabinet.Value;
-                //check_Sanad.Checked = object_melk.Sanad.Value;
-                //check_Tabdil.Checked = object_melk.GhabelTabdil.Value;
-                //check_Teras.Checked = object_melk.Teras.Value;
                 combo_Forosh_Ejare_Kharid.SelectedItem = object_melk.Forosh_ejare_kharid;
                 combo_Jahat_Melk.SelectedItem = object_melk.JahatAparteman;
                 combo_NoMelk.SelectedItem = object_melk.NoMelk;
@@ -270,10 +264,9 @@ namespace Amlak_App
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            //var id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            //var item = melk.Find_By_Id(id);
+          
             var result = melk.Delete(object_melk);
-            Fill_DataGridView(null);
+            Form1_Load(null,null);
             if (result == true)
             {
                 MessageBox.Show("کاربر عزیز حذف انجام شد");
@@ -284,35 +277,21 @@ namespace Amlak_App
         private void btnEdit_Click(object sender, EventArgs e)
         {
             Adress = txt_Kheyaban.Text + "," + txt_Koche.Text + "," + txt_Bonbast.Text;
-
-            if (Forosh_Ejare_Kharid == "خرید" || Forosh_Ejare_Kharid == "فروش")
+            string rahn = txt_Rahn.Text != "" ? txt_Rahn.Text + "_" + lbl_Rahn.Text : null;
+            string ejare = txt_Ejare.Text != "" ? txt_Ejare.Text + "_" + lbl_Ejare.Text : null;
+            int? CountVahed;
+            try
             {
-                if (NoMelk == "خانه")
-                {
-                    object_melk = new Melk_Kh_Ap(null, null, txt_gheymat_kol.Text + combo_vahed_pol.Text, Forosh_Ejare_Kharid, txt_FullName.Text, Convert.ToInt32(txt_Metraj.Text), Convert.ToInt32(txt_TedadKhab.Text), txt_Tabaghe.Text, Asansor, PosheshKaf, SysGarmayesh, SysSarmayesh, Sanad, txt_YearSakht.Text, Teras, Kabinet, JahatMelk, Anbari, GhabelTabdil, masked_TarikhTahvil.Text, txt_PhoneNumber.Text, DateTime.Now.ToShamsi(), Adress, JahatMelk, txt_Kheyaban.Text, NoUser, NoMelk, txt_Tozihat.Text,true);
-
-                }
-                else
-                {
-                    object_melk = new Melk_Kh_Ap(null,null, txt_gheymat_kol.Text + combo_vahed_pol.Text, Forosh_Ejare_Kharid, txt_FullName.Text, Convert.ToInt32(txt_Metraj.Text), Convert.ToInt32(txt_TedadKhab.Text), txt_Tabaghe.Text, Asansor, PosheshKaf, SysGarmayesh, SysSarmayesh, Sanad, txt_YearSakht.Text, Teras, Kabinet, JahatMelk, Anbari, GhabelTabdil, masked_TarikhTahvil.Text, txt_PhoneNumber.Text, DateTime.Now.ToShamsi(), int.Parse(txt_TedadVahed.Text), Adress, JahatMelk, txt_Kheyaban.Text, NoUser, NoMelk, txt_Tozihat.Text,true);
-
-                }
-
+                CountVahed = int.Parse(txt_TedadVahed.Text);
             }
-            else
+            catch
             {
-                if (NoMelk == "آپارتمان")
-                {
-                    object_melk = new Melk_Kh_Ap(txt_Rahn.Text, txt_Ejare.Text, txt_gheymat_kol.Text + combo_vahed_pol.Text, Forosh_Ejare_Kharid, txt_FullName.Text, Convert.ToInt32(txt_Metraj.Text), Convert.ToInt32(txt_TedadKhab.Text), txt_Tabaghe.Text, Asansor, PosheshKaf, SysGarmayesh, SysSarmayesh, Sanad, txt_YearSakht.Text, Teras, Kabinet, JahatMelk, Anbari, GhabelTabdil, masked_TarikhTahvil.Text, txt_PhoneNumber.Text, DateTime.Now.ToShamsi(), int.Parse(txt_TedadVahed.Text), Adress, JahatMelk, txt_Kheyaban.Text, NoUser, NoMelk, txt_Tozihat.Text,true);
-
-                }
-                else
-                {
-                    object_melk = new Melk_Kh_Ap(txt_Rahn.Text, txt_Ejare.Text, txt_gheymat_kol.Text + combo_vahed_pol.Text, Forosh_Ejare_Kharid, txt_FullName.Text, Convert.ToInt32(txt_Metraj.Text), Convert.ToInt32(txt_TedadKhab.Text), txt_Tabaghe.Text, Asansor, PosheshKaf, SysGarmayesh, SysSarmayesh, Sanad, txt_YearSakht.Text, Teras, Kabinet, JahatMelk, Anbari, GhabelTabdil, masked_TarikhTahvil.Text, txt_PhoneNumber.Text, DateTime.Now.ToShamsi(), Adress, JahatMelk, txt_Kheyaban.Text, NoUser, NoMelk, txt_Tozihat.Text,true);
-
-                }
-
+                CountVahed = null;
             }
+           
+                object_melk = new Melk_Kh_Ap(rahn, ejare, txt_gheymat_kol.Text + combo_vahed_pol.Text, Forosh_Ejare_Kharid, txt_FullName.Text, Convert.ToInt32(txt_Metraj.Text), Convert.ToInt32(txt_TedadKhab.Text), int.Parse(txt_Tabaghe.Text), Asansor, PosheshKaf, SysGarmayesh, SysSarmayesh, Sanad, txt_YearSakht.Text, Teras, Kabinet, JahatMelk, Anbari, GhabelTabdil, masked_TarikhTahvil.Text, txt_PhoneNumber.Text, DateTime.Now.ToShamsi(), CountVahed, Adress, JahatMelk, txt_Kheyaban.Text, NoUser, NoMelk, txt_Tozihat.Text, true);
+
+               
             object_melk.ID = id;
             bool result = melk.update(object_melk);
             if (result == true)
@@ -332,17 +311,11 @@ namespace Amlak_App
 
         private void btn_Search_ShowList_Click(object sender, EventArgs e)
         {
-            var item = combo_Search_Forosh_ejare_kharid_.Text.Split('-');
+            var item = combo_Search_TransactionType.Text.Split('-');
 
-            list = melk.Find_By_No_Moamele(item[1], item[0]);
-            if (list != null)
-            {
-                Fill_DataGridView(true);
-            }
-            else
-            {
-                Fill_DataGridView(null);
-            }
+            list = melk.Find_By_TransactionType(item[1], item[0]);
+            dataGridView1.DataSource = list.ToList();
+           
         }
 
         private void radio_No_Asansor_CheckedChanged(object sender, EventArgs e)
@@ -435,12 +408,25 @@ namespace Amlak_App
             empty_input();
         }
 
+        private void combo_Search_TransactionType_SelectedValueChanged(object sender, EventArgs e)
+        {
+            var item = combo_Search_TransactionType.Text.Split('-');
+
+            list = melk.Find_By_TransactionType(item[1], item[0]);
+            dataGridView1.DataSource = list.ToList();
+        }
+
+        private void btn_Show_All_List_Click(object sender, EventArgs e)
+        {
+            Form1_Load(null, null);
+        }
+
         private void btn_show_Customer_Click(object sender, EventArgs e)
         {
             string Full_Name = txt_Search_FullName.Text;
             if (!string.IsNullOrEmpty(Full_Name))
             {
-                list = melk.Finnd_By_FullName(Full_Name);
+                list = melk.Find_By_FullName(Full_Name);
                 Fill_DataGridView(true);
             }
             else
@@ -453,7 +439,7 @@ namespace Amlak_App
         {
             id =int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             var item = melk.Find_By_Id(id);
-            Form2 form2 = new Form2(item);
+            Form2 form2 = new Form2(item,this);
             form2.ShowDialog();
 
         }
@@ -495,48 +481,27 @@ namespace Amlak_App
                     NoMelk = null;
                     break;
             }
-            //disable_input(Forosh_Ejare_Kharid, NoUser, NoMelk);
+           
         }
-        //این تابع عمل دیزیبل کردن ورودی ها را تنظیم میکند
-        //private void disable_input(string forosh_ejare_kharid, string NoUser, string NoMelk)
-        //{
-        //    if (forosh_ejare_kharid == "فروش" || forosh_ejare_kharid == "خرید")
-        //    {
-        //        txt_Rahn.Enabled = false;
-        //        txt_Ejare.Enabled = false;
-        //    }
-        //    else
-        //    {
-        //        txt_Rahn.Enabled = true;
-        //        txt_Ejare.Enabled = true;
-        //    }
-        //    if (NoMelk == "خانه")
-        //    {
-        //        
-        //    }
-        //    else
-        //    {
-        //        txt_TedadVahed.Enabled = true;
-        //    }
-        //}
+       
 
         private void combo_No_User_SelectedValueChanged(object sender, EventArgs e)
         {
             switch (combo_No_User.Text)
             {
-                case "مشتری":
-                    NoUser = "مشتری";
+                case "متقاضی":
+                    NoUser = "متقاضی";
                     break;
-                case "فروشنده":
-                    NoUser = "فروشنده";
+                case "صاحب ملک":
+                    NoUser = "صاحب ملک";
                     break;
                 default:
                     NoUser = null;
                     break;
             }
-            //disable_input(Forosh_Ejare_Kharid, NoUser, NoMelk);
+           
         }
-        //خالی کردن تکست باکس ها
+        
         private void empty_input()
         {
             txt_Bonbast.Text = "";
@@ -569,8 +534,8 @@ namespace Amlak_App
             combo_vahed_pol.SelectedIndex = 0;
 
         }
-        //آپدیت کردن و تغییر در گرید
-        private void Fill_DataGridView(bool? a)
+       
+        public void Fill_DataGridView(bool? a)
         {
 
             
@@ -674,26 +639,29 @@ namespace Amlak_App
         {
 
 
+         
             errorProvider.Clear();
-
-
-            //melk_Kh_Ap = new Melk_Kh_Ap(int.Parse(txt_Rahn.Text), Convert.ToInt32(txt_Ejare.Text), txt_FullName.Text, Convert.ToUInt16(txt_Metraj.Text), Convert.ToInt32(txt_TedadKhab.Text), txt_Tabaghe.Text, check_Asansor.Checked, combo_Poshesh.Text, combo_System_Garmayesh.Text, combo_System_Sarmayesh.Text, check_Sanad.Checked, txt_YearSakht.Text, check_Teras.Checked, check_Kabinet.Checked, combo_Jahat_Melk.Text, check_Anbari.Checked, check_Tabdil.Checked, masked_TarikhTahvil.Text, txt_PhoneNumber.Text, DateTime.Now.ToShamsi(), Adress, null, txt_Kheyaban.Text, combo_No_User.Text, combo_NoMelk.Text);
+            string rahn =txt_Rahn.Text!=""? txt_Rahn.Text + "_" + lbl_Rahn.Text:null;
+            string ejare = txt_Ejare.Text!=""?txt_Ejare.Text + "_" + lbl_Ejare.Text:null;
+            int? CountVahed;
+            try
+            {
+                CountVahed = int.Parse(txt_TedadVahed.Text);
+            }
+            catch
+            {
+                CountVahed = null;
+            }
             bool success = false;
             if (tabControl1.SelectedTab.Name == "tab_Khane_Ap")
             {
                 if (txt_YearSakht.Text != "" && ((txt_TedadVahed.Text != "") || (txt_TedadVahed.Text == "" && txt_TedadVahed.Enabled == false)) && txt_TedadKhab.Text != "" && txt_Tabaghe.Text != "" && ((txt_Rahn.Text != "" && txt_Ejare.Text != "") || (txt_Rahn.Text == "" && txt_Ejare.Text == "" && txt_Ejare.Enabled == false)) && txt_Metraj.Text != "" && txt_Koche.Text != "" && txt_Kheyaban.Text != "" && txt_FullName.Text != "" && txt_Bonbast.Text != "" && NoMelk != "" && NoUser != "" && Forosh_Ejare_Kharid != "" && JahatMelk != "" && PosheshKaf != "" && SysGarmayesh != "" && SysSarmayesh != "" && ((txt_gheymat_kol.Text != "" && txt_gheymat_kol.Enabled == true) || (txt_gheymat_kol.Text == "" && txt_gheymat_kol.Enabled == false)))
                 {
                     Adress = txt_Kheyaban.Text + "," + txt_Koche.Text + "," + txt_Bonbast.Text;
-                    if (NoMelk == "خانه")
-                    {
-                        object_melk = new Melk_Kh_Ap(txt_Rahn.Text, txt_Ejare.Text, txt_gheymat_kol.Text + combo_vahed_pol.Text, Forosh_Ejare_Kharid, txt_FullName.Text, Convert.ToInt32(txt_Metraj.Text), Convert.ToInt32(txt_TedadKhab.Text), txt_Tabaghe.Text, Asansor, PosheshKaf, SysGarmayesh, SysSarmayesh, Sanad, txt_YearSakht.Text, Teras, Kabinet, JahatMelk, Anbari, GhabelTabdil, masked_TarikhTahvil.Text, txt_PhoneNumber.Text, DateTime.Now.ToShamsi(), Adress, JahatMelk, txt_Kheyaban.Text, NoUser, NoMelk, txt_Tozihat.Text,true);
+                   
+                        object_melk = new Melk_Kh_Ap(rahn, ejare, txt_gheymat_kol.Text + combo_vahed_pol.Text, Forosh_Ejare_Kharid, txt_FullName.Text, Convert.ToInt32(txt_Metraj.Text), Convert.ToInt32(txt_TedadKhab.Text), int.Parse(txt_Tabaghe.Text), Asansor, PosheshKaf, SysGarmayesh, SysSarmayesh, Sanad, txt_YearSakht.Text, Teras, Kabinet, JahatMelk, Anbari, GhabelTabdil, masked_TarikhTahvil.Text, txt_PhoneNumber.Text, DateTime.Now.ToShamsi(), CountVahed, Adress, JahatMelk, txt_Kheyaban.Text, NoUser, NoMelk, txt_Tozihat.Text,true);
 
-                    }
-                    else
-                    {
-                        object_melk = new Melk_Kh_Ap(txt_Rahn.Text, txt_Ejare.Text, txt_gheymat_kol.Text + combo_vahed_pol.Text, Forosh_Ejare_Kharid, txt_FullName.Text, Convert.ToInt32(txt_Metraj.Text), Convert.ToInt32(txt_TedadKhab.Text), txt_Tabaghe.Text, Asansor, PosheshKaf, SysGarmayesh, SysSarmayesh, Sanad, txt_YearSakht.Text, Teras, Kabinet, JahatMelk, Anbari, GhabelTabdil, masked_TarikhTahvil.Text, txt_PhoneNumber.Text, DateTime.Now.ToShamsi(), int.Parse(txt_TedadVahed.Text), Adress, JahatMelk, txt_Kheyaban.Text, NoUser, NoMelk, txt_Tozihat.Text,true);
-
-                    }
+                   
                     BL.Melk melk = new BL.Melk();
                     success = melk.SabtMelk_Kh_Ap(object_melk);
                     Form1_Load(null, null);
@@ -753,19 +721,12 @@ namespace Amlak_App
                     {
                         errorProvider.SetError(txt_TedadKhab, "لطفا پر کنید");
                     }
-                    //if (txt_TedadVahed.Text == "")
-                    //{
-                    //    errorProvider.SetError(txt_TedadVahed, "لطفا پر کنید");
-                    //}
+                   
                     if (txt_YearSakht.Text == "")
                     {
                         errorProvider.SetError(txt_YearSakht, "لطفا پر کنید");
                     }
-                    //if (masked_TarikhTahvil.Text == "")
-                    //{
-                    //    errorProvider.SetError(masked_TarikhTahvil, "لطفا پر کنید");
-
-                    //}
+                  
                     if (SysGarmayesh == "")
                     {
                         errorProvider.SetError(combo_System_Garmayesh, "لطفا یک آیتم انتخاب کنید");
@@ -828,7 +789,7 @@ namespace Amlak_App
                 MessageBox.Show("لطفا تب خود را انتخاب نمایید");
 
             }
-            //BL.Entity.Melk_Kh_Ap melk_Kh_Ap = new BL.Entity.Melk_Kh_Ap();
+            
 
         }
     }

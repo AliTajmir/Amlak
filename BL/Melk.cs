@@ -51,15 +51,15 @@ namespace BL
            
         }
 
-        public List<BL.Entity.Melk_Kh_Ap> Find_By_No_Moamele(string NoMelk, string NoMoamele)
+        public List<BL.Entity.Melk_Kh_Ap> Find_By_TransactionType(string NoMelk, string TransactionType)
         {
-          var items =melk.Find_By_No_Moamele(NoMelk,NoMoamele);
+          var items =melk.Find_By_TransactionType(NoMelk, TransactionType);
             return items;
 
         }
-        public List<BL.Entity.Melk_Kh_Ap> Finnd_By_FullName(string Name)
+        public List<BL.Entity.Melk_Kh_Ap> Find_By_FullName(string Name)
         {
-           var items = melk.Finnd_By_FullName(Name);
+           var items = melk.Find_By_FullName(Name);
             return items;
         }
         public List<BL.Entity.Melk_Kh_Ap> Get_All_customers()

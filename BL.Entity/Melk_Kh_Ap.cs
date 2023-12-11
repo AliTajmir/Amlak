@@ -12,7 +12,7 @@ namespace BL.Entity
         {
 
         }
-        public Melk_Kh_Ap(string _Rahn, string _Ejare,string _Gheymat_kol, string _Forosh_ejare_kharid, string _Malek, int _Metraj, int _TedadKhab, string _Tabaghe, bool? _Asansor, string _PosheshKaf, string _SystemGarmayesh, string _SystemSarmayesh, bool? _Sanad, string _SaleSakht, bool? _Teras, bool? _Kabinet, string _JahatAparteman, bool? _Anbari, bool? _GhabelTabdil, string _TarikhTahvil, string _Telephone, string _TarikhSabt, int _TedadVahed, string _Adress, string _Shomali_Jonobi, string _Mahdode, string _NoUser, string _NoMelk,string _Tozihat,bool _Mojod)
+        public Melk_Kh_Ap(string _Rahn, string _Ejare,string _Gheymat_kol, string _Forosh_ejare_kharid, string _Malek, int? _Metraj, int? _TedadKhab, int? _Tabaghe, bool? _Asansor, string _PosheshKaf, string _SystemGarmayesh, string _SystemSarmayesh, bool? _Sanad, string _SaleSakht, bool? _Teras, bool? _Kabinet, string _JahatAparteman, bool? _Anbari, bool? _GhabelTabdil, string _TarikhTahvil, string _Telephone, string _TarikhSabt, int? _TedadVahed, string _Adress, string _Shomali_Jonobi, string _Mahdode, string _NoUser, string _NoMelk,string _Tozihat,bool? _Mojod)
         {
             this.Adress = _Adress;
             this.Anbari = _Anbari;
@@ -45,38 +45,38 @@ namespace BL.Entity
             this.Tozihat = _Tozihat;
             this.Mojod = _Mojod;
         }
-        public Melk_Kh_Ap(string _Rahn, string _Ejare, string _Gheymat_kol, string _Forosh_ejare_kharid, string _Malek, int _Metraj, int _TedadKhab, string _Tabaghe, bool? _Asansor, string _PosheshKaf, string _SystemGarmayesh, string _SystemSarmayesh, bool? _Sanad, string _SaleSakht, bool? _Teras, bool? _Kabinet, string _JahatAparteman, bool? _Anbari, bool? _GhabelTabdil, string _TarikhTahvil, string _Telephone, string _TarikhSabt, string _Adress, string _Shomali_Jonobi, string _Mahdode, string _NoUser, string _NoMelk, string _Tozihat,bool _Mojod)
-        {
-            this.Adress = _Adress;
-            this.Anbari = _Anbari;
-            this.Asansor = _Asansor;
-            this.Ejare = _Ejare;
-            this.GhabelTabdil = _GhabelTabdil;
-            this.JahatAparteman = _JahatAparteman;
-            this.Kabinet = _Kabinet;
-            this.Mahdode = _Mahdode;
-            this.FullName = _Malek;
-            this.Metraj = _Metraj;
-            this.NoMelk = _NoMelk;
-            this.NoUser = _NoUser;
-            this.PosheshKaf = _PosheshKaf;
-            this.Rahn = _Rahn;
-            this.SaleSakht = _SaleSakht;
-            this.Sanad = _Sanad;
-            this.Shomali_Jonobi = _Shomali_Jonobi;
-            this.SystemGarmayesh = _SystemGarmayesh;
-            this.SystemSarmayesh = _SystemSarmayesh;
-            this.Tabaghe = _Tabaghe;
-            this.TarikhSabt = _TarikhSabt;
-            this.TarikhTahvil = _TarikhTahvil;
-            this.TedadKhab = _TedadKhab;
-            this.Telephone = _Telephone;
-            this.Teras = _Teras;
-            this.Forosh_ejare_kharid = _Forosh_ejare_kharid;
-            this.Gheymat_kol = _Gheymat_kol;
-            this.Tozihat = _Tozihat;
-            this.Mojod = _Mojod;
-        }
+        //public Melk_Kh_Ap(string _Rahn, string _Ejare, string _Gheymat_kol, string _Forosh_ejare_kharid, string _Malek, int _Metraj, int _TedadKhab, string _Tabaghe, bool? _Asansor, string _PosheshKaf, string _SystemGarmayesh, string _SystemSarmayesh, bool? _Sanad, string _SaleSakht, bool? _Teras, bool? _Kabinet, string _JahatAparteman, bool? _Anbari, bool? _GhabelTabdil, string _TarikhTahvil, string _Telephone, string _TarikhSabt, string _Adress, string _Shomali_Jonobi, string _Mahdode, string _NoUser, string _NoMelk, string _Tozihat,bool _Mojod)
+        //{
+        //    this.Adress = _Adress;
+        //    this.Anbari = _Anbari;
+        //    this.Asansor = _Asansor;
+        //    this.Ejare = _Ejare;
+        //    this.GhabelTabdil = _GhabelTabdil;
+        //    this.JahatAparteman = _JahatAparteman;
+        //    this.Kabinet = _Kabinet;
+        //    this.Mahdode = _Mahdode;
+        //    this.FullName = _Malek;
+        //    this.Metraj = _Metraj;
+        //    this.NoMelk = _NoMelk;
+        //    this.NoUser = _NoUser;
+        //    this.PosheshKaf = _PosheshKaf;
+        //    this.Rahn = _Rahn;
+        //    this.SaleSakht = _SaleSakht;
+        //    this.Sanad = _Sanad;
+        //    this.Shomali_Jonobi = _Shomali_Jonobi;
+        //    this.SystemGarmayesh = _SystemGarmayesh;
+        //    this.SystemSarmayesh = _SystemSarmayesh;
+        //    this.Tabaghe = _Tabaghe;
+        //    this.TarikhSabt = _TarikhSabt;
+        //    this.TarikhTahvil = _TarikhTahvil;
+        //    this.TedadKhab = _TedadKhab;
+        //    this.Telephone = _Telephone;
+        //    this.Teras = _Teras;
+        //    this.Forosh_ejare_kharid = _Forosh_ejare_kharid;
+        //    this.Gheymat_kol = _Gheymat_kol;
+        //    this.Tozihat = _Tozihat;
+        //    this.Mojod = _Mojod;
+        //}
         [Key]
         public int ID
         {
@@ -138,7 +138,7 @@ namespace BL.Entity
            
         }
 
-        public string Tabaghe
+        public int? Tabaghe
         {
             get;
             set;
@@ -292,7 +292,7 @@ namespace BL.Entity
             set;
 
         }
-        public bool Mojod
+        public bool? Mojod
         {
             get;
             set;

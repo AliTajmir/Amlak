@@ -105,8 +105,8 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.lbl_Show_Rahn = new System.Windows.Forms.Label();
-            this.lbl_Show_Ejare = new System.Windows.Forms.Label();
+            this.lbl_Rahn = new System.Windows.Forms.Label();
+            this.lbl_Ejare = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -120,9 +120,9 @@
             this.txt_Search_FullName = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Search_ShowList = new System.Windows.Forms.Button();
+            this.btn_Show_All_List = new System.Windows.Forms.Button();
             this.btn_show_Customer = new System.Windows.Forms.Button();
-            this.combo_Search_Forosh_ejare_kharid_ = new System.Windows.Forms.ComboBox();
+            this.combo_Search_TransactionType = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.combo_No_User = new System.Windows.Forms.ComboBox();
             this.btnSave = new System.Windows.Forms.Button();
@@ -147,11 +147,11 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("B Yekan", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("B Yekan", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -164,7 +164,7 @@
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("B Yekan", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -172,9 +172,10 @@
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersWidth = 51;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("B Yekan", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1004, 431);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
@@ -244,18 +245,18 @@
             this.tab_Khane_Ap.Controls.Add(this.label27);
             this.tab_Khane_Ap.Controls.Add(this.label26);
             this.tab_Khane_Ap.Controls.Add(this.label6);
-            this.tab_Khane_Ap.Controls.Add(this.lbl_Show_Rahn);
-            this.tab_Khane_Ap.Controls.Add(this.lbl_Show_Ejare);
+            this.tab_Khane_Ap.Controls.Add(this.lbl_Rahn);
+            this.tab_Khane_Ap.Controls.Add(this.lbl_Ejare);
             this.tab_Khane_Ap.Controls.Add(this.label30);
             this.tab_Khane_Ap.Controls.Add(this.label5);
             this.tab_Khane_Ap.Controls.Add(this.label4);
             this.tab_Khane_Ap.Controls.Add(this.label16);
             this.tab_Khane_Ap.Controls.Add(this.label3);
-            this.tab_Khane_Ap.Location = new System.Drawing.Point(4, 29);
+            this.tab_Khane_Ap.Location = new System.Drawing.Point(4, 25);
             this.tab_Khane_Ap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tab_Khane_Ap.Name = "tab_Khane_Ap";
             this.tab_Khane_Ap.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tab_Khane_Ap.Size = new System.Drawing.Size(1430, 314);
+            this.tab_Khane_Ap.Size = new System.Drawing.Size(1430, 318);
             this.tab_Khane_Ap.TabIndex = 0;
             this.tab_Khane_Ap.Text = "خانه/آپارتمان";
             // 
@@ -276,7 +277,7 @@
             this.radio_Not_NoYes_Kabinet.Checked = true;
             this.radio_Not_NoYes_Kabinet.Location = new System.Drawing.Point(-2, 8);
             this.radio_Not_NoYes_Kabinet.Name = "radio_Not_NoYes_Kabinet";
-            this.radio_Not_NoYes_Kabinet.Size = new System.Drawing.Size(100, 25);
+            this.radio_Not_NoYes_Kabinet.Size = new System.Drawing.Size(89, 21);
             this.radio_Not_NoYes_Kabinet.TabIndex = 0;
             this.radio_Not_NoYes_Kabinet.TabStop = true;
             this.radio_Not_NoYes_Kabinet.Text = "فرقی ندارد";
@@ -288,7 +289,7 @@
             this.radio_No_Kabinet.AutoSize = true;
             this.radio_No_Kabinet.Location = new System.Drawing.Point(99, 8);
             this.radio_No_Kabinet.Name = "radio_No_Kabinet";
-            this.radio_No_Kabinet.Size = new System.Drawing.Size(65, 25);
+            this.radio_No_Kabinet.Size = new System.Drawing.Size(57, 21);
             this.radio_No_Kabinet.TabIndex = 0;
             this.radio_No_Kabinet.Text = "ندارد";
             this.radio_No_Kabinet.UseVisualStyleBackColor = true;
@@ -299,7 +300,7 @@
             this.radio_Yes_Kabinet.AutoSize = true;
             this.radio_Yes_Kabinet.Location = new System.Drawing.Point(167, 8);
             this.radio_Yes_Kabinet.Name = "radio_Yes_Kabinet";
-            this.radio_Yes_Kabinet.Size = new System.Drawing.Size(59, 25);
+            this.radio_Yes_Kabinet.Size = new System.Drawing.Size(53, 21);
             this.radio_Yes_Kabinet.TabIndex = 0;
             this.radio_Yes_Kabinet.Text = "دارد";
             this.radio_Yes_Kabinet.UseVisualStyleBackColor = true;
@@ -322,7 +323,7 @@
             this.radio_Not_NoYes_Teras.Checked = true;
             this.radio_Not_NoYes_Teras.Location = new System.Drawing.Point(-2, 8);
             this.radio_Not_NoYes_Teras.Name = "radio_Not_NoYes_Teras";
-            this.radio_Not_NoYes_Teras.Size = new System.Drawing.Size(100, 25);
+            this.radio_Not_NoYes_Teras.Size = new System.Drawing.Size(89, 21);
             this.radio_Not_NoYes_Teras.TabIndex = 0;
             this.radio_Not_NoYes_Teras.TabStop = true;
             this.radio_Not_NoYes_Teras.Text = "فرقی ندارد";
@@ -334,7 +335,7 @@
             this.radio_No_Teras.AutoSize = true;
             this.radio_No_Teras.Location = new System.Drawing.Point(99, 8);
             this.radio_No_Teras.Name = "radio_No_Teras";
-            this.radio_No_Teras.Size = new System.Drawing.Size(65, 25);
+            this.radio_No_Teras.Size = new System.Drawing.Size(57, 21);
             this.radio_No_Teras.TabIndex = 0;
             this.radio_No_Teras.Text = "ندارد";
             this.radio_No_Teras.UseVisualStyleBackColor = true;
@@ -345,7 +346,7 @@
             this.radio_Yes_Teras.AutoSize = true;
             this.radio_Yes_Teras.Location = new System.Drawing.Point(167, 8);
             this.radio_Yes_Teras.Name = "radio_Yes_Teras";
-            this.radio_Yes_Teras.Size = new System.Drawing.Size(59, 25);
+            this.radio_Yes_Teras.Size = new System.Drawing.Size(53, 21);
             this.radio_Yes_Teras.TabIndex = 0;
             this.radio_Yes_Teras.Text = "دارد";
             this.radio_Yes_Teras.UseVisualStyleBackColor = true;
@@ -368,7 +369,7 @@
             this.radio_Not_NoYes_Sanad.Checked = true;
             this.radio_Not_NoYes_Sanad.Location = new System.Drawing.Point(-2, 8);
             this.radio_Not_NoYes_Sanad.Name = "radio_Not_NoYes_Sanad";
-            this.radio_Not_NoYes_Sanad.Size = new System.Drawing.Size(100, 25);
+            this.radio_Not_NoYes_Sanad.Size = new System.Drawing.Size(89, 21);
             this.radio_Not_NoYes_Sanad.TabIndex = 0;
             this.radio_Not_NoYes_Sanad.TabStop = true;
             this.radio_Not_NoYes_Sanad.Text = "فرقی ندارد";
@@ -380,7 +381,7 @@
             this.radio_No_Sanad.AutoSize = true;
             this.radio_No_Sanad.Location = new System.Drawing.Point(99, 8);
             this.radio_No_Sanad.Name = "radio_No_Sanad";
-            this.radio_No_Sanad.Size = new System.Drawing.Size(65, 25);
+            this.radio_No_Sanad.Size = new System.Drawing.Size(57, 21);
             this.radio_No_Sanad.TabIndex = 0;
             this.radio_No_Sanad.Text = "ندارد";
             this.radio_No_Sanad.UseVisualStyleBackColor = true;
@@ -391,7 +392,7 @@
             this.radio_Yes_Sanad.AutoSize = true;
             this.radio_Yes_Sanad.Location = new System.Drawing.Point(167, 8);
             this.radio_Yes_Sanad.Name = "radio_Yes_Sanad";
-            this.radio_Yes_Sanad.Size = new System.Drawing.Size(59, 25);
+            this.radio_Yes_Sanad.Size = new System.Drawing.Size(53, 21);
             this.radio_Yes_Sanad.TabIndex = 0;
             this.radio_Yes_Sanad.Text = "دارد";
             this.radio_Yes_Sanad.UseVisualStyleBackColor = true;
@@ -400,10 +401,10 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label13.Location = new System.Drawing.Point(688, 12);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(79, 26);
+            this.label13.Size = new System.Drawing.Size(67, 20);
             this.label13.TabIndex = 0;
             this.label13.Text = "آسانسور:";
             this.label13.Click += new System.EventHandler(this.label13_Click);
@@ -425,7 +426,7 @@
             this.radio_Not_NoYes_GhabelTabdil.Checked = true;
             this.radio_Not_NoYes_GhabelTabdil.Location = new System.Drawing.Point(-2, 8);
             this.radio_Not_NoYes_GhabelTabdil.Name = "radio_Not_NoYes_GhabelTabdil";
-            this.radio_Not_NoYes_GhabelTabdil.Size = new System.Drawing.Size(100, 25);
+            this.radio_Not_NoYes_GhabelTabdil.Size = new System.Drawing.Size(89, 21);
             this.radio_Not_NoYes_GhabelTabdil.TabIndex = 0;
             this.radio_Not_NoYes_GhabelTabdil.TabStop = true;
             this.radio_Not_NoYes_GhabelTabdil.Text = "فرقی ندارد";
@@ -437,7 +438,7 @@
             this.radio_No_GhabelTabdil.AutoSize = true;
             this.radio_No_GhabelTabdil.Location = new System.Drawing.Point(99, 8);
             this.radio_No_GhabelTabdil.Name = "radio_No_GhabelTabdil";
-            this.radio_No_GhabelTabdil.Size = new System.Drawing.Size(65, 25);
+            this.radio_No_GhabelTabdil.Size = new System.Drawing.Size(57, 21);
             this.radio_No_GhabelTabdil.TabIndex = 0;
             this.radio_No_GhabelTabdil.Text = "ندارد";
             this.radio_No_GhabelTabdil.UseVisualStyleBackColor = true;
@@ -448,7 +449,7 @@
             this.radio_Yes_GhabelTabdil.AutoSize = true;
             this.radio_Yes_GhabelTabdil.Location = new System.Drawing.Point(167, 8);
             this.radio_Yes_GhabelTabdil.Name = "radio_Yes_GhabelTabdil";
-            this.radio_Yes_GhabelTabdil.Size = new System.Drawing.Size(59, 25);
+            this.radio_Yes_GhabelTabdil.Size = new System.Drawing.Size(53, 21);
             this.radio_Yes_GhabelTabdil.TabIndex = 0;
             this.radio_Yes_GhabelTabdil.Text = "دارد";
             this.radio_Yes_GhabelTabdil.UseVisualStyleBackColor = true;
@@ -471,7 +472,7 @@
             this.radio_Not_NoYes_Asansor.Checked = true;
             this.radio_Not_NoYes_Asansor.Location = new System.Drawing.Point(-2, 8);
             this.radio_Not_NoYes_Asansor.Name = "radio_Not_NoYes_Asansor";
-            this.radio_Not_NoYes_Asansor.Size = new System.Drawing.Size(100, 25);
+            this.radio_Not_NoYes_Asansor.Size = new System.Drawing.Size(89, 21);
             this.radio_Not_NoYes_Asansor.TabIndex = 0;
             this.radio_Not_NoYes_Asansor.TabStop = true;
             this.radio_Not_NoYes_Asansor.Text = "فرقی ندارد";
@@ -483,7 +484,7 @@
             this.radio_No_Asansor.AutoSize = true;
             this.radio_No_Asansor.Location = new System.Drawing.Point(99, 8);
             this.radio_No_Asansor.Name = "radio_No_Asansor";
-            this.radio_No_Asansor.Size = new System.Drawing.Size(65, 25);
+            this.radio_No_Asansor.Size = new System.Drawing.Size(57, 21);
             this.radio_No_Asansor.TabIndex = 0;
             this.radio_No_Asansor.Text = "ندارد";
             this.radio_No_Asansor.UseVisualStyleBackColor = true;
@@ -494,7 +495,7 @@
             this.radio_Yes_Asansor.AutoSize = true;
             this.radio_Yes_Asansor.Location = new System.Drawing.Point(167, 8);
             this.radio_Yes_Asansor.Name = "radio_Yes_Asansor";
-            this.radio_Yes_Asansor.Size = new System.Drawing.Size(59, 25);
+            this.radio_Yes_Asansor.Size = new System.Drawing.Size(53, 21);
             this.radio_Yes_Asansor.TabIndex = 0;
             this.radio_Yes_Asansor.Text = "دارد";
             this.radio_Yes_Asansor.UseVisualStyleBackColor = true;
@@ -517,7 +518,7 @@
             this.radio_Not_NoYes_Anbari.Checked = true;
             this.radio_Not_NoYes_Anbari.Location = new System.Drawing.Point(-2, 8);
             this.radio_Not_NoYes_Anbari.Name = "radio_Not_NoYes_Anbari";
-            this.radio_Not_NoYes_Anbari.Size = new System.Drawing.Size(100, 25);
+            this.radio_Not_NoYes_Anbari.Size = new System.Drawing.Size(89, 21);
             this.radio_Not_NoYes_Anbari.TabIndex = 0;
             this.radio_Not_NoYes_Anbari.TabStop = true;
             this.radio_Not_NoYes_Anbari.Text = "فرقی ندارد";
@@ -529,7 +530,7 @@
             this.radio_No_Anbari.AutoSize = true;
             this.radio_No_Anbari.Location = new System.Drawing.Point(99, 8);
             this.radio_No_Anbari.Name = "radio_No_Anbari";
-            this.radio_No_Anbari.Size = new System.Drawing.Size(65, 25);
+            this.radio_No_Anbari.Size = new System.Drawing.Size(57, 21);
             this.radio_No_Anbari.TabIndex = 0;
             this.radio_No_Anbari.Text = "ندارد";
             this.radio_No_Anbari.UseVisualStyleBackColor = true;
@@ -540,7 +541,7 @@
             this.radio_Yes_Anbari.AutoSize = true;
             this.radio_Yes_Anbari.Location = new System.Drawing.Point(167, 8);
             this.radio_Yes_Anbari.Name = "radio_Yes_Anbari";
-            this.radio_Yes_Anbari.Size = new System.Drawing.Size(59, 25);
+            this.radio_Yes_Anbari.Size = new System.Drawing.Size(53, 21);
             this.radio_Yes_Anbari.TabIndex = 0;
             this.radio_Yes_Anbari.Text = "دارد";
             this.radio_Yes_Anbari.UseVisualStyleBackColor = true;
@@ -552,13 +553,13 @@
             this.masked_TarikhTahvil.Mask = "00/00/0000";
             this.masked_TarikhTahvil.Name = "masked_TarikhTahvil";
             this.masked_TarikhTahvil.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.masked_TarikhTahvil.Size = new System.Drawing.Size(138, 27);
+            this.masked_TarikhTahvil.Size = new System.Drawing.Size(138, 22);
             this.masked_TarikhTahvil.TabIndex = 6;
             this.masked_TarikhTahvil.ValidatingType = typeof(System.DateTime);
             // 
             // txt_Metraj
             // 
-            this.txt_Metraj.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_Metraj.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_Metraj.Location = new System.Drawing.Point(285, 172);
             this.txt_Metraj.Multiline = true;
             this.txt_Metraj.Name = "txt_Metraj";
@@ -567,7 +568,7 @@
             // 
             // txt_YearSakht
             // 
-            this.txt_YearSakht.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_YearSakht.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_YearSakht.Location = new System.Drawing.Point(285, 266);
             this.txt_YearSakht.Multiline = true;
             this.txt_YearSakht.Name = "txt_YearSakht";
@@ -576,7 +577,7 @@
             // 
             // combo_System_Sarmayesh
             // 
-            this.combo_System_Sarmayesh.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.combo_System_Sarmayesh.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.combo_System_Sarmayesh.FormattingEnabled = true;
             this.combo_System_Sarmayesh.Items.AddRange(new object[] {
             "",
@@ -585,13 +586,13 @@
             "پنکه"});
             this.combo_System_Sarmayesh.Location = new System.Drawing.Point(5, 54);
             this.combo_System_Sarmayesh.Name = "combo_System_Sarmayesh";
-            this.combo_System_Sarmayesh.Size = new System.Drawing.Size(135, 43);
+            this.combo_System_Sarmayesh.Size = new System.Drawing.Size(135, 37);
             this.combo_System_Sarmayesh.TabIndex = 4;
             this.combo_System_Sarmayesh.SelectedValueChanged += new System.EventHandler(this.combo_System_Sarmayesh_SelectedValueChanged);
             // 
             // combo_vahed_pol
             // 
-            this.combo_vahed_pol.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.combo_vahed_pol.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.combo_vahed_pol.FormattingEnabled = true;
             this.combo_vahed_pol.Items.AddRange(new object[] {
             "",
@@ -599,13 +600,13 @@
             "_میلیون"});
             this.combo_vahed_pol.Location = new System.Drawing.Point(1115, 266);
             this.combo_vahed_pol.Name = "combo_vahed_pol";
-            this.combo_vahed_pol.Size = new System.Drawing.Size(92, 43);
+            this.combo_vahed_pol.Size = new System.Drawing.Size(92, 37);
             this.combo_vahed_pol.TabIndex = 4;
             this.combo_vahed_pol.SelectedValueChanged += new System.EventHandler(this.combo_System_Garmayesh_SelectedValueChanged);
             // 
             // combo_System_Garmayesh
             // 
-            this.combo_System_Garmayesh.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.combo_System_Garmayesh.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.combo_System_Garmayesh.FormattingEnabled = true;
             this.combo_System_Garmayesh.Items.AddRange(new object[] {
             "",
@@ -614,13 +615,13 @@
             "شومینه"});
             this.combo_System_Garmayesh.Location = new System.Drawing.Point(6, 6);
             this.combo_System_Garmayesh.Name = "combo_System_Garmayesh";
-            this.combo_System_Garmayesh.Size = new System.Drawing.Size(135, 43);
+            this.combo_System_Garmayesh.Size = new System.Drawing.Size(135, 37);
             this.combo_System_Garmayesh.TabIndex = 4;
             this.combo_System_Garmayesh.SelectedValueChanged += new System.EventHandler(this.combo_System_Garmayesh_SelectedValueChanged);
             // 
             // combo_Poshesh
             // 
-            this.combo_Poshesh.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.combo_Poshesh.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.combo_Poshesh.FormattingEnabled = true;
             this.combo_Poshesh.Items.AddRange(new object[] {
             "",
@@ -630,13 +631,13 @@
             "پارکت"});
             this.combo_Poshesh.Location = new System.Drawing.Point(285, 219);
             this.combo_Poshesh.Name = "combo_Poshesh";
-            this.combo_Poshesh.Size = new System.Drawing.Size(135, 43);
+            this.combo_Poshesh.Size = new System.Drawing.Size(135, 37);
             this.combo_Poshesh.TabIndex = 4;
             this.combo_Poshesh.SelectedValueChanged += new System.EventHandler(this.combo_Poshesh_SelectedValueChanged);
             // 
             // combo_Jahat_Melk
             // 
-            this.combo_Jahat_Melk.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.combo_Jahat_Melk.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.combo_Jahat_Melk.FormattingEnabled = true;
             this.combo_Jahat_Melk.Items.AddRange(new object[] {
             "",
@@ -644,7 +645,7 @@
             "جنوبی"});
             this.combo_Jahat_Melk.Location = new System.Drawing.Point(285, 124);
             this.combo_Jahat_Melk.Name = "combo_Jahat_Melk";
-            this.combo_Jahat_Melk.Size = new System.Drawing.Size(135, 43);
+            this.combo_Jahat_Melk.Size = new System.Drawing.Size(135, 37);
             this.combo_Jahat_Melk.TabIndex = 4;
             this.combo_Jahat_Melk.SelectedValueChanged += new System.EventHandler(this.combo_Jahat_Melk_SelectedValueChanged);
             // 
@@ -656,7 +657,7 @@
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.txt_Kheyaban);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Font = new System.Drawing.Font("B Yekan", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.groupBox2.Location = new System.Drawing.Point(3, 126);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(278, 181);
@@ -666,7 +667,7 @@
             // 
             // txt_Bonbast
             // 
-            this.txt_Bonbast.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_Bonbast.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_Bonbast.Location = new System.Drawing.Point(6, 130);
             this.txt_Bonbast.Multiline = true;
             this.txt_Bonbast.Name = "txt_Bonbast";
@@ -676,16 +677,16 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label11.Location = new System.Drawing.Point(211, 139);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(76, 26);
+            this.label11.Size = new System.Drawing.Size(64, 20);
             this.label11.TabIndex = 0;
             this.label11.Text = "بن بست:";
             // 
             // txt_Koche
             // 
-            this.txt_Koche.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_Koche.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_Koche.Location = new System.Drawing.Point(6, 81);
             this.txt_Koche.Multiline = true;
             this.txt_Koche.Name = "txt_Koche";
@@ -695,16 +696,16 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label10.Location = new System.Drawing.Point(220, 94);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 26);
+            this.label10.Size = new System.Drawing.Size(48, 20);
             this.label10.TabIndex = 0;
             this.label10.Text = "کوچه:";
             // 
             // txt_Kheyaban
             // 
-            this.txt_Kheyaban.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_Kheyaban.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_Kheyaban.Location = new System.Drawing.Point(6, 32);
             this.txt_Kheyaban.Multiline = true;
             this.txt_Kheyaban.Name = "txt_Kheyaban";
@@ -714,16 +715,16 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label9.Location = new System.Drawing.Point(215, 49);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 26);
+            this.label9.Size = new System.Drawing.Size(55, 20);
             this.label9.TabIndex = 0;
             this.label9.Text = "خیابان:";
             // 
             // txt_FullName
             // 
-            this.txt_FullName.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_FullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_FullName.Location = new System.Drawing.Point(1115, 108);
             this.txt_FullName.Multiline = true;
             this.txt_FullName.Name = "txt_FullName";
@@ -732,7 +733,7 @@
             // 
             // txt_Tozihat
             // 
-            this.txt_Tozihat.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_Tozihat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_Tozihat.Location = new System.Drawing.Point(771, 212);
             this.txt_Tozihat.Multiline = true;
             this.txt_Tozihat.Name = "txt_Tozihat";
@@ -741,7 +742,7 @@
             // 
             // txt_PhoneNumber
             // 
-            this.txt_PhoneNumber.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_PhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_PhoneNumber.Location = new System.Drawing.Point(768, 162);
             this.txt_PhoneNumber.Multiline = true;
             this.txt_PhoneNumber.Name = "txt_PhoneNumber";
@@ -750,7 +751,7 @@
             // 
             // txt_TedadKhab
             // 
-            this.txt_TedadKhab.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_TedadKhab.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_TedadKhab.Location = new System.Drawing.Point(768, 113);
             this.txt_TedadKhab.Multiline = true;
             this.txt_TedadKhab.Name = "txt_TedadKhab";
@@ -759,7 +760,7 @@
             // 
             // txt_TedadVahed
             // 
-            this.txt_TedadVahed.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_TedadVahed.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_TedadVahed.Location = new System.Drawing.Point(768, 64);
             this.txt_TedadVahed.Multiline = true;
             this.txt_TedadVahed.Name = "txt_TedadVahed";
@@ -768,7 +769,7 @@
             // 
             // txt_Tabaghe
             // 
-            this.txt_Tabaghe.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_Tabaghe.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_Tabaghe.Location = new System.Drawing.Point(768, 10);
             this.txt_Tabaghe.Multiline = true;
             this.txt_Tabaghe.Name = "txt_Tabaghe";
@@ -777,36 +778,36 @@
             // 
             // txt_Ejare
             // 
-            this.txt_Ejare.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txt_Ejare.Location = new System.Drawing.Point(1212, 161);
+            this.txt_Ejare.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_Ejare.Location = new System.Drawing.Point(1133, 161);
             this.txt_Ejare.Multiline = true;
             this.txt_Ejare.Name = "txt_Ejare";
-            this.txt_Ejare.Size = new System.Drawing.Size(66, 43);
+            this.txt_Ejare.Size = new System.Drawing.Size(145, 43);
             this.txt_Ejare.TabIndex = 2;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label14.Location = new System.Drawing.Point(670, 105);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(101, 26);
+            this.label14.Size = new System.Drawing.Size(79, 20);
             this.label14.TabIndex = 0;
             this.label14.Text = "قابل تبدیل:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label12.Location = new System.Drawing.Point(451, -2);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(62, 26);
+            this.label12.Size = new System.Drawing.Size(56, 20);
             this.label12.TabIndex = 0;
             this.label12.Text = "انباری:";
             // 
             // txt_gheymat_kol
             // 
-            this.txt_gheymat_kol.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_gheymat_kol.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txt_gheymat_kol.Location = new System.Drawing.Point(1212, 266);
             this.txt_gheymat_kol.Multiline = true;
             this.txt_gheymat_kol.Name = "txt_gheymat_kol";
@@ -815,65 +816,65 @@
             // 
             // txt_Rahn
             // 
-            this.txt_Rahn.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txt_Rahn.Location = new System.Drawing.Point(1212, 217);
+            this.txt_Rahn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txt_Rahn.Location = new System.Drawing.Point(1133, 217);
             this.txt_Rahn.Multiline = true;
             this.txt_Rahn.Name = "txt_Rahn";
-            this.txt_Rahn.Size = new System.Drawing.Size(66, 43);
+            this.txt_Rahn.Size = new System.Drawing.Size(145, 43);
             this.txt_Rahn.TabIndex = 2;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label7.Location = new System.Drawing.Point(1278, 126);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(149, 26);
+            this.label7.Size = new System.Drawing.Size(134, 20);
             this.label7.TabIndex = 0;
             this.label7.Text = "نام و نام خانوادگی:";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label17.Location = new System.Drawing.Point(728, 179);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(43, 26);
+            this.label17.Size = new System.Drawing.Size(31, 20);
             this.label17.TabIndex = 0;
             this.label17.Text = "سند";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label18.Location = new System.Drawing.Point(716, 251);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(54, 26);
+            this.label18.Size = new System.Drawing.Size(43, 20);
             this.label18.TabIndex = 0;
             this.label18.Text = "تراس";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label8.Location = new System.Drawing.Point(944, 137);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 26);
+            this.label8.Size = new System.Drawing.Size(0, 20);
             this.label8.TabIndex = 0;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label15.Location = new System.Drawing.Point(421, 133);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(110, 26);
+            this.label15.Size = new System.Drawing.Size(98, 20);
             this.label15.TabIndex = 0;
             this.label15.Text = "جهت آپارتمان";
             // 
             // combo_NoMelk
             // 
-            this.combo_NoMelk.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.combo_NoMelk.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.combo_NoMelk.FormattingEnabled = true;
             this.combo_NoMelk.Items.AddRange(new object[] {
             "",
@@ -881,13 +882,13 @@
             "آپارتمان"});
             this.combo_NoMelk.Location = new System.Drawing.Point(1115, 3);
             this.combo_NoMelk.Name = "combo_NoMelk";
-            this.combo_NoMelk.Size = new System.Drawing.Size(163, 43);
+            this.combo_NoMelk.Size = new System.Drawing.Size(163, 37);
             this.combo_NoMelk.TabIndex = 1;
             this.combo_NoMelk.SelectedValueChanged += new System.EventHandler(this.combo_NoMelk_SelectedValueChanged);
             // 
             // combo_Forosh_Ejare_Kharid
             // 
-            this.combo_Forosh_Ejare_Kharid.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.combo_Forosh_Ejare_Kharid.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.combo_Forosh_Ejare_Kharid.FormattingEnabled = true;
             this.combo_Forosh_Ejare_Kharid.Items.AddRange(new object[] {
             "",
@@ -896,197 +897,197 @@
             "خرید"});
             this.combo_Forosh_Ejare_Kharid.Location = new System.Drawing.Point(1115, 55);
             this.combo_Forosh_Ejare_Kharid.Name = "combo_Forosh_Ejare_Kharid";
-            this.combo_Forosh_Ejare_Kharid.Size = new System.Drawing.Size(163, 43);
+            this.combo_Forosh_Ejare_Kharid.Size = new System.Drawing.Size(163, 37);
             this.combo_Forosh_Ejare_Kharid.TabIndex = 1;
             this.combo_Forosh_Ejare_Kharid.SelectedValueChanged += new System.EventHandler(this.combo_Forosh_Ejare_Kharid_SelectedValueChanged);
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label20.Location = new System.Drawing.Point(460, 181);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(57, 26);
+            this.label20.Size = new System.Drawing.Size(51, 20);
             this.label20.TabIndex = 0;
             this.label20.Text = "متراژ:";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label21.Location = new System.Drawing.Point(438, 226);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(93, 26);
+            this.label21.Size = new System.Drawing.Size(81, 20);
             this.label21.TabIndex = 0;
             this.label21.Text = "پوشش کف:";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label22.Location = new System.Drawing.Point(435, 273);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(96, 26);
+            this.label22.Size = new System.Drawing.Size(84, 20);
             this.label22.TabIndex = 0;
             this.label22.Text = "سال ساخت:";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label24.Location = new System.Drawing.Point(144, 62);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(137, 26);
+            this.label24.Size = new System.Drawing.Size(110, 20);
             this.label24.TabIndex = 0;
             this.label24.Text = "سیستم سرمایش:";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label25.Location = new System.Drawing.Point(147, 104);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(105, 26);
+            this.label25.Size = new System.Drawing.Size(93, 20);
             this.label25.TabIndex = 0;
             this.label25.Text = "تاریخ تحویل:";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label23.Location = new System.Drawing.Point(149, 14);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(132, 26);
+            this.label23.Size = new System.Drawing.Size(108, 20);
             this.label23.TabIndex = 0;
             this.label23.Text = "سیستم گرمایش:";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label29.Location = new System.Drawing.Point(993, 226);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(77, 26);
+            this.label29.Size = new System.Drawing.Size(70, 20);
             this.label29.TabIndex = 0;
             this.label29.Text = "توضیحات";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label19.Location = new System.Drawing.Point(451, 62);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(66, 26);
+            this.label19.Size = new System.Drawing.Size(56, 20);
             this.label19.TabIndex = 0;
             this.label19.Text = "کابینت:";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label28.Location = new System.Drawing.Point(993, 175);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(51, 26);
+            this.label28.Size = new System.Drawing.Size(40, 20);
             this.label28.TabIndex = 0;
             this.label28.Text = "تلفن:";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label27.Location = new System.Drawing.Point(983, 82);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(99, 26);
+            this.label27.Size = new System.Drawing.Size(83, 20);
             this.label27.TabIndex = 0;
             this.label27.Text = "تعداد واحد:";
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label26.Location = new System.Drawing.Point(983, 125);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(102, 26);
+            this.label26.Size = new System.Drawing.Size(89, 20);
             this.label26.TabIndex = 0;
             this.label26.Text = "تعداد خواب:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label6.Location = new System.Drawing.Point(992, 27);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 26);
+            this.label6.Size = new System.Drawing.Size(43, 20);
             this.label6.TabIndex = 0;
             this.label6.Text = "طبقه:";
             // 
-            // lbl_Show_Rahn
+            // lbl_Rahn
             // 
-            this.lbl_Show_Rahn.AutoSize = true;
-            this.lbl_Show_Rahn.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbl_Show_Rahn.Location = new System.Drawing.Point(1146, 226);
-            this.lbl_Show_Rahn.Name = "lbl_Show_Rahn";
-            this.lbl_Show_Rahn.Size = new System.Drawing.Size(60, 26);
-            this.lbl_Show_Rahn.TabIndex = 0;
-            this.lbl_Show_Rahn.Text = "میلیون";
+            this.lbl_Rahn.AutoSize = true;
+            this.lbl_Rahn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Rahn.Location = new System.Drawing.Point(1089, 227);
+            this.lbl_Rahn.Name = "lbl_Rahn";
+            this.lbl_Rahn.Size = new System.Drawing.Size(45, 20);
+            this.lbl_Rahn.TabIndex = 0;
+            this.lbl_Rahn.Text = "تومان";
             // 
-            // lbl_Show_Ejare
+            // lbl_Ejare
             // 
-            this.lbl_Show_Ejare.AutoSize = true;
-            this.lbl_Show_Ejare.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lbl_Show_Ejare.Location = new System.Drawing.Point(1146, 171);
-            this.lbl_Show_Ejare.Name = "lbl_Show_Ejare";
-            this.lbl_Show_Ejare.Size = new System.Drawing.Size(60, 26);
-            this.lbl_Show_Ejare.TabIndex = 0;
-            this.lbl_Show_Ejare.Text = "میلیون";
+            this.lbl_Ejare.AutoSize = true;
+            this.lbl_Ejare.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lbl_Ejare.Location = new System.Drawing.Point(1089, 172);
+            this.lbl_Ejare.Name = "lbl_Ejare";
+            this.lbl_Ejare.Size = new System.Drawing.Size(45, 20);
+            this.lbl_Ejare.TabIndex = 0;
+            this.lbl_Ejare.Text = "تومان";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label30.Location = new System.Drawing.Point(1296, 275);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(109, 26);
+            this.label30.Size = new System.Drawing.Size(91, 20);
             this.label30.TabIndex = 0;
             this.label30.Text = "قیمت فروش:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label5.Location = new System.Drawing.Point(1314, 175);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 26);
+            this.label5.Size = new System.Drawing.Size(50, 20);
             this.label5.TabIndex = 0;
             this.label5.Text = "اجاره:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.Location = new System.Drawing.Point(1314, 226);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 26);
+            this.label4.Size = new System.Drawing.Size(43, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "رهن:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label16.Location = new System.Drawing.Point(1284, 14);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(77, 26);
+            this.label16.Size = new System.Drawing.Size(68, 20);
             this.label16.TabIndex = 0;
             this.label16.Text = "نوع ملک:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("B Yekan", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.Location = new System.Drawing.Point(1284, 62);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 26);
+            this.label3.Size = new System.Drawing.Size(125, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "فروش/اجاره/خرید";
             // 
@@ -1128,9 +1129,9 @@
             this.groupBox1.Controls.Add(this.txt_Search_FullName);
             this.groupBox1.Controls.Add(this.label31);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btn_Search_ShowList);
+            this.groupBox1.Controls.Add(this.btn_Show_All_List);
             this.groupBox1.Controls.Add(this.btn_show_Customer);
-            this.groupBox1.Controls.Add(this.combo_Search_Forosh_ejare_kharid_);
+            this.groupBox1.Controls.Add(this.combo_Search_TransactionType);
             this.groupBox1.Location = new System.Drawing.Point(1035, 13);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1162,7 +1163,7 @@
             this.label31.AutoSize = true;
             this.label31.Location = new System.Drawing.Point(244, 179);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(165, 21);
+            this.label31.Size = new System.Drawing.Size(150, 17);
             this.label31.TabIndex = 2;
             this.label31.Text = "نام و نام خانوادگی مشتری";
             // 
@@ -1171,19 +1172,19 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(311, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 21);
+            this.label1.Size = new System.Drawing.Size(67, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "نوع ملک  :";
             // 
-            // btn_Search_ShowList
+            // btn_Show_All_List
             // 
-            this.btn_Search_ShowList.Location = new System.Drawing.Point(25, 75);
-            this.btn_Search_ShowList.Name = "btn_Search_ShowList";
-            this.btn_Search_ShowList.Size = new System.Drawing.Size(168, 64);
-            this.btn_Search_ShowList.TabIndex = 1;
-            this.btn_Search_ShowList.Text = "نمایش لیست مشتریان";
-            this.btn_Search_ShowList.UseVisualStyleBackColor = true;
-            this.btn_Search_ShowList.Click += new System.EventHandler(this.btn_Search_ShowList_Click);
+            this.btn_Show_All_List.Location = new System.Drawing.Point(25, 75);
+            this.btn_Show_All_List.Name = "btn_Show_All_List";
+            this.btn_Show_All_List.Size = new System.Drawing.Size(168, 64);
+            this.btn_Show_All_List.TabIndex = 1;
+            this.btn_Show_All_List.Text = "نمایش کل لیست";
+            this.btn_Show_All_List.UseVisualStyleBackColor = true;
+            this.btn_Show_All_List.Click += new System.EventHandler(this.btn_Show_All_List_Click);
             // 
             // btn_show_Customer
             // 
@@ -1195,11 +1196,12 @@
             this.btn_show_Customer.UseVisualStyleBackColor = true;
             this.btn_show_Customer.Click += new System.EventHandler(this.btn_show_Customer_Click);
             // 
-            // combo_Search_Forosh_ejare_kharid_
+            // combo_Search_TransactionType
             // 
-            this.combo_Search_Forosh_ejare_kharid_.FormattingEnabled = true;
-            this.combo_Search_Forosh_ejare_kharid_.Items.AddRange(new object[] {
-            "زمین",
+            this.combo_Search_TransactionType.FormattingEnabled = true;
+            this.combo_Search_TransactionType.Items.AddRange(new object[] {
+            "فروش-زمین",
+            "خرید-زمین",
             "فروش-باغ ",
             "فروش-ویلا",
             "اجاره-باغ",
@@ -1207,32 +1209,34 @@
             "فروش-خانه",
             "اجاره-آپارتمان ",
             "اجاره-خانه",
-            "فروش-آپارتمان"});
-            this.combo_Search_Forosh_ejare_kharid_.Location = new System.Drawing.Point(25, 41);
-            this.combo_Search_Forosh_ejare_kharid_.Name = "combo_Search_Forosh_ejare_kharid_";
-            this.combo_Search_Forosh_ejare_kharid_.Size = new System.Drawing.Size(247, 28);
-            this.combo_Search_Forosh_ejare_kharid_.TabIndex = 0;
+            "فروش-آپارتمان",
+            "خرید-آپارتمان"});
+            this.combo_Search_TransactionType.Location = new System.Drawing.Point(25, 41);
+            this.combo_Search_TransactionType.Name = "combo_Search_TransactionType";
+            this.combo_Search_TransactionType.Size = new System.Drawing.Size(247, 24);
+            this.combo_Search_TransactionType.TabIndex = 0;
+            this.combo_Search_TransactionType.SelectedValueChanged += new System.EventHandler(this.combo_Search_TransactionType_SelectedValueChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(1326, 383);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 21);
+            this.label2.Size = new System.Drawing.Size(99, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "فروشنده/مشتری:";
             // 
             // combo_No_User
             // 
-            this.combo_No_User.Font = new System.Drawing.Font("B Yekan", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.combo_No_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.combo_No_User.FormattingEnabled = true;
             this.combo_No_User.Items.AddRange(new object[] {
             "",
-            "مشتری",
-            "فروشنده"});
+            "متقاضی",
+            "صاحب ملک"});
             this.combo_No_User.Location = new System.Drawing.Point(1056, 370);
             this.combo_No_User.Name = "combo_No_User";
-            this.combo_No_User.Size = new System.Drawing.Size(251, 43);
+            this.combo_No_User.Size = new System.Drawing.Size(251, 37);
             this.combo_No_User.TabIndex = 3;
             this.combo_No_User.SelectedValueChanged += new System.EventHandler(this.combo_No_User_SelectedValueChanged);
             // 
@@ -1289,7 +1293,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.dataGridView1);
-            this.Font = new System.Drawing.Font("B Yekan", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(5);
@@ -1330,9 +1334,9 @@
         private System.Windows.Forms.TabPage tab_Maghaze;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_Search_ShowList;
+        private System.Windows.Forms.Button btn_Show_All_List;
         private System.Windows.Forms.Button btn_show_Customer;
-        private System.Windows.Forms.ComboBox combo_Search_Forosh_ejare_kharid_;
+        private System.Windows.Forms.ComboBox combo_Search_TransactionType;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox combo_No_User;
         private System.Windows.Forms.Button btnSave;
@@ -1413,8 +1417,8 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lbl_Show_Rahn;
-        private System.Windows.Forms.Label lbl_Show_Ejare;
+        private System.Windows.Forms.Label lbl_Rahn;
+        private System.Windows.Forms.Label lbl_Ejare;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

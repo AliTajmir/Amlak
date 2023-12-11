@@ -12,21 +12,23 @@ namespace Amlak_App
 {
     public partial class Form2 : Form
     {
-        BL.Entity.Melk_Kh_Ap melk;
+        BL.Entity.Melk_Kh_Ap _melk_Kh_Ap;
         List<BL.Entity.Melk_Kh_Ap> list;
         BL.Melk _melk;
-        public Form2(BL.Entity.Melk_Kh_Ap Melk)
+        Form1 _form1;
+        public Form2(BL.Entity.Melk_Kh_Ap melk_Kh_Ap,Form1 form1)
         {
             InitializeComponent();
-            melk = Melk;
+            _melk_Kh_Ap = melk_Kh_Ap;
             _melk = new BL.Melk();
+            _form1 = form1;
         }
 
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            list = _melk.Get_orders_Customer(melk);
-            dataGridView1.DataSource = list;
+            list = _melk.Get_orders_Customer(_melk_Kh_Ap);
+            dataGridView1.DataSource = list.ToList();
             dataGridView1.Columns[0].HeaderText = "ردیف";
             dataGridView1.Columns[0].Width = 50;
             dataGridView1.Columns[1].HeaderText = "فروشنده/مشتری";
@@ -92,6 +94,12 @@ namespace Amlak_App
             dataGridView1.Columns[31].HeaderText = "موجود";
             dataGridView1.Columns[31].Width = 50;
            
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _form1.Fill_DataGridView(false);
+
         }
     }
 }

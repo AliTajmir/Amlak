@@ -26,3 +26,17 @@ F:\AMLAK\Amlak_App\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
 F:\AMLAK\Amlak_App\DAL\obj\Debug\DAL.csproj.CopyComplete
 F:\AMLAK\Amlak_App\DAL\obj\Debug\DAL.dll
 F:\AMLAK\Amlak_App\DAL\obj\Debug\DAL.pdb
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\bin\Debug\DAL.dll.config
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\bin\Debug\DAL.dll
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\bin\Debug\DAL.pdb
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\bin\Debug\BL.Entity.dll
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\bin\Debug\EntityFramework.dll
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\bin\Debug\BL.Entity.pdb
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\bin\Debug\BL.Entity.dll.config
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\bin\Debug\EntityFramework.xml
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\obj\Debug\DAL.dll
+C:\Users\a\Downloads\Compressed\Amlak-main\DAL\obj\Debug\DAL.pdb
